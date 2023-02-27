@@ -24,8 +24,8 @@ export default {
 @use "../assets/scss/partials/mixins.scss" as *;
 
 header {
-  height: 6rem;
   @include my-flex-center(vertical);
+  height: 6rem;
   justify-content: space-between;
   font-weight: 600;
   color: #514c50;
@@ -37,6 +37,9 @@ header {
   ul {
     display: flex;
     gap: 1rem;
+  }
+  li:hover {
+    color: #0082f9;
   }
 }
 </style>
