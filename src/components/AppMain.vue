@@ -9,7 +9,18 @@ export default {
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
+  <main>
+    <div class="container">
+      <h1>CONTENT GOES HERE</h1>
+    </div>
+  </main>
 </template>
 
-<style></style>
+<style lang="scss" scoped>
+main {
+  height: 6rem;
+  color: white;
+  line-height: 6rem;
+  background-color: #1c1c1c;
+}
+</style>
