@@ -7,12 +7,10 @@ export default {
 };
 </script>
 <template>
-  <div class="container">
-    <div class="card">
-      <img :src="img" alt="img" />
-      <div class="title">
-        <h2>{{ title }}</h2>
-      </div>
+  <div class="card">
+    <img :src="img" alt="img" />
+    <div class="title">
+      <h2>{{ title }}</h2>
     </div>
   </div>
 </template>
@@ -27,6 +25,8 @@ export default {
   height: 12rem;
   padding: 1rem;
   color: white;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
   img {
     width: 100%;
     height: 100%;
@@ -35,6 +35,8 @@ export default {
   }
   h2 {
     font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
   }
 }
 </style>

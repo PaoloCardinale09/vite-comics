@@ -99,20 +99,52 @@ export default {
 <template>
   <main>
     <section class="container">
-      <AppCard
-        v-for="comic in comics"
-        :title="comic.series"
-        :img="comic.thumb"
-      />
+      <h2>CURRENT SERIES</h2>
+
+      <div class="wrapper">
+        <AppCard
+          v-for="comic in comics"
+          :title="comic.series"
+          :img="comic.thumb"
+        />
+      </div>
+      <div class="more">
+        <span> LOAD MORE </span>
+      </div>
     </section>
   </main>
 </template>
 
 <style lang="scss" scoped>
 main {
-  height: 60rem;
+  // height: 60rem;
   // color: white;
   // line-height: 6rem;
   background-color: #1c1c1c;
+  padding-bottom: 2rem;
+  position: relative;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  // padding: 3rem 0;
+}
+
+h2 {
+  padding: 0.5rem 2rem;
+  color: white;
+  background-color: #0082f9;
+  width: fit-content;
+  position: absolute;
+  top: -25px;
+}
+
+.more {
+  color: white;
+  background-color: #0082f9;
+  width: fit-content;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 0.5rem 3rem;
 }
 </style>
