@@ -40,6 +40,25 @@ header {
   }
   li:hover {
     color: #0082f9;
+    cursor: pointer;
+  }
+  li {
+    position: relative;
+    display: inline-block;
+  }
+  li:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -223%;
+    width: 0;
+    height: 0.5rem;
+    background-color: #0082f9;
+    z-index: 2;
+  }
+  li:hover:after {
+    width: 100%;
+    color: red;
   }
 }
 </style>
